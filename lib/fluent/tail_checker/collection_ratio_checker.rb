@@ -46,7 +46,7 @@ module Fluent
           ratio = collection_ratio(entry.pos, size)
           if ratio < @collection_ratio_threshold
             unacceptable_collection_ratio_found = true
-            unacceptable_collection_ratio_path_and_ratio_list.append([entry.path, ratio])
+            unacceptable_collection_ratio_path_and_ratio_list.push([entry.path, ratio])
           end
         end
 

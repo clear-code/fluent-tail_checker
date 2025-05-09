@@ -50,7 +50,7 @@ module Fluent
       end
 
       def watching_entries
-        entries.filter do |entry|
+        entries.select do |entry|
           not entry.unwatched?
         end
       end
